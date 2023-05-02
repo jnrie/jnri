@@ -1,1 +1,255 @@
-<h1>hello</h1>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎈</title>
+    <link rel="shortcut icon" href="https://i.postimg.cc/dt7z0zWH/20210100194315.png">
+    <!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+  
+  <body>
+        <div id="container">
+            <div id="flex">
+                
+                <main>
+                    <h1>under construction</h1>
+                    <p><img src="https://i.postimg.cc/02r96QLs/notice.png">
+                    <p>Please visit again later!(* ´  `  ) 2023/05/01
+                </main>
+                
+            <aside id="leftSidebar" style="margin-right: 10px;"><img src="https://i.postimg.cc/dt7z0zWH/20210100194315.png" width="100%"><h2>juri</h2>
+            <div class="box">
+                <p><img src="https://i.postimg.cc/j57Q7b61/MyHome.png"></p>
+                <ul style="padding-left:10px;">
+                </ul>
+            </div>
+            <h3>test</h3>
+            </aside></div>
+            
+        </div>
+        
+        
+        
+        <!-- THIS IS THE CSS !-->
+        <style>
+            /* styles are what change the color and sizes of stuff on your site. */
+
+            /* these are variables that are being used in the code
+    these tended to confuse some people, so I only kept 
+    the images as variables */
+
+            :root {
+                --background-color: #e7dfcc;
+                --body-bg-image: url('https://i.postimg.cc/pX6YPpmc/26375803-p10.jpg');
+
+                --content: #e7dfcc;
+            }
+
+            /*  If you download a font file you can upload it onto your Neocities
+    and then link it! Many fonts have separate files for each style
+    (bold, italic, etc. T_T) which is why there are so many!
+    
+    */
+
+            @font-face {
+                font-family: Nunito;
+                src: url('https://sadhost.neocities.org/fonts/Nunito-Regular.ttf');
+            }
+
+            @font-face {
+                font-family: Nunito;
+                src: url('https://sadhost.neocities.org/fonts/Nunito-Bold.ttf');
+                font-weight: bold;
+            }
+
+            @font-face {
+                font-family: Nunito;
+                src: url('https://sadhost.neocities.org/fonts/Nunito-Italic.ttf');
+                font-style: italic;
+            }
+
+            @font-face {
+                font-family: Nunito;
+                src: url('https://sadhost.neocities.org/fonts/Nunito-BoldItalic.ttf');
+                font-style: italic;
+                font-weight: bold;
+            }
+
+            body {
+                font-family: 'MS Gothic', sans-serif;
+                margin: 0;
+                background-color: #e7dfcc;
+                background-size: 100%;
+                color: #6E6F36;
+                background-image: var(--body-bg-image);
+            }
+
+            * {
+                box-sizing: border-box;
+            }
+
+            /* below this line is CSS for the layout */
+
+            /* this is a CSS comment
+    to uncomment a line of CSS, remove the * and the /
+    before and after the text */
+
+
+            /* the "container" is what wraps your entire website */
+            /* if you want something (like the header) to be Wider than
+    the other elements, you will need to move that div outside
+    of the container */
+            #container {
+                max-width: 720px;
+                /* this is the width of your layout! */
+                /* if you change the above value, scroll to the bottom
+      and change the media query according to the comment! */
+                margin: 0 auto;
+                /* this centers the entire page */
+            }
+
+            /* the area below is for all links on your page
+    EXCEPT for the navigation */
+            #container a {
+                color: #6E6F36;
+                font-weight: bold;
+                text-decoration:none;
+            }
+
+            #header {
+                width: 100%;
+                background-color: #5e4e8c;
+                /* header color here! */
+                height: 100%;
+                /* this is only for a background image! */
+                /* if you want to put images IN the header, 
+      you can add them directly to the <div id="header"></div> element! */
+                background-image: var(--header-image);
+                background-size: 100%;
+            }
+
+            #flex {
+                display: flex;
+            }
+
+            /* this colors BOTH sidebars
+    if you want to style them separately,
+    create styles for #leftSidebar and #rightSidebar */
+            aside {
+                background-color: #e7dfcc;
+                width: 200px;
+                padding: 20px;
+                font-size: smaller;
+            }
+
+
+            /* this is the color of the main content area,
+    between the sidebars! */
+            main {
+                background-color: #e7dfcc;
+                flex: 1;
+                padding: 20px;
+                order: 2;
+            }
+
+            /* what's this "order" stuff about??
+    allow me to explain!
+    if you're using both sidebars, the "order" value
+    tells the CSS the order in which to display them.
+    left sidebar is 1, content is 2, and right sidebar is 3! */
+
+            */ #leftSidebar {
+                order: 1;
+            }
+
+            #rightSidebar {
+                order: 3;
+            }
+
+            footer {
+                background-color: #13092D;
+                /* background color for footer */
+                width: 100%;
+                height: 40px;
+                padding: 10px;
+                text-align: center;
+                /* this centers the footer text */
+            }
+
+            h1,
+            h2,
+            h3 {
+                color: #6E6F36;
+            }
+
+            h1 {
+                font-size: 25px;
+            }
+
+            strong {
+                color: #6E6F36;
+            }
+
+            /* this is just a cool box, it's the darker colored one */
+            .box {
+                background-color: #e7dfcc;
+                border: 1px solid #6E6F36;
+                padding: 10px;
+            }
+
+            /* CSS for extras */
+
+            #topBar {
+                width: 100%;
+                height: 30px;
+                padding: 10px;
+                font-size: smaller;
+                background-color: #13092D;
+            }
+
+
+            /* BELOW THIS POINT IS MEDIA QUERY */
+
+            /* so you wanna change the width of your page? 
+    by default, the container width is 900px.
+    in order to keep things responsive, take your new height,
+    and then subtrack it by 100. use this new number as the 
+    "max-width" value below
+    */
+
+            @media only screen and (max-width: 620px) {
+                #flex {
+                    flex-wrap: wrap;
+                }
+
+                aside {
+                    width: 100%;
+                }
+
+                /* the order of the items is adjusted here for responsiveness!
+      since the sidebars would be too small on a mobile device.
+      feel free to play around with the order!
+      */
+                main {
+                    order: 1;
+                }
+
+                #leftSidebar {
+                    order: 2;
+                }
+
+                #rightSidebar {
+                    order: 3;
+                }
+
+                }
+            }
+        </style>
+
+    
+  </body>
+</html>
